@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <UserSecretsId>HealthTrack.SqlIntegration-development</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../HealthTrack.Application.Tests/TestSession.cs" Link="TestDoubles/TestSession.cs" />
+    <ProjectReference Include="../../src/HealthTrack.Web/HealthTrack.Web.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.32" />
+  </ItemGroup>
+</Project>

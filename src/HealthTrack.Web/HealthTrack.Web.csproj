@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>HealthTrack.Web-development</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../HealthTrack.Application/HealthTrack.Application.csproj" />
+    <ProjectReference Include="../HealthTrack.Infrastructure/HealthTrack.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

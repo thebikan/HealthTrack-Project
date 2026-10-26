@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../../src/HealthTrack.Domain/HealthTrack.Domain.csproj" />
+  </ItemGroup>
+</Project>

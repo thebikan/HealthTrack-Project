@@ -1,0 +1,20 @@
+# HealthTrack — agent gotchas
+- User authorizes provisional ASP.NET Core MVC/.NET 8 development; lecturer approval remains pending (decision 0002).
+- The assessment machine must run the app using a standard supported Visual Studio installation.
+- Use `docs/prd.md` as the working scope; the original coursework brief is unavailable and academic requirements remain unverified.
+- Stack choice/version is provisional until confirmed in `docs/trd.md`.
+- For a task, read the relevant sections of `docs/prd.md`, `docs/trd.md`, `docs/schema.md` and `docs/implementation-plan.md`; read `docs/app-flow.md` or `docs/ui-brief.md` when UI is involved.
+- Implement backend steps sequentially; continue authorized offline work after available tests pass, but keep SQL-dependent acceptance pending.
+- Decision 0005 authorizes advanced offline backend work before remote SQL; keep live tests gated and never connect/migrate without approval.
+- `Client`, `Trainer`, `Admin` are the canonical role values; Administrator is a display label, not a fourth role; never permit public Admin sign-up.
+- Every health-data read/write requires server-side ownership or active trainer-client assignment checks.
+- A Trainer role alone never grants access to every client.
+- SQL Server / EF Core assumptions apply only to the ASP.NET Core option; adapt if MVC 5 is required.
+- Appointment conflict handling must be concurrency-safe, not just a pre-insert Any() check.
+- Health measurements are sensitive; redact values from logs and seed only synthetic demo data.
+- For scheduled reminders, persist delivery state and prevent duplicate sends.
+- Never commit secrets, connection passwords, or student/private health information.
+- Report phase files, tests, results, and unresolved decisions; continue approved phases unless blocked.
+- Do not install system dependencies, delete existing data, or change the approved technology stack without permission.
+- Do not claim a feature works unless it was executed/tested.
+- Commit only after user review/approval; never auto-commit without instruction.
